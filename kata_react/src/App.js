@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState, Fragment } from "react";
 
@@ -31,6 +30,7 @@ function App() {
 
 	const resetStack = () => {
 		setStack([]);
+		nextId = 0;
 	};
 
 	const plusOp = () => {
