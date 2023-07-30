@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "b7822f2b-ff39-4d07-b69f-827ddc3f1dd3",
+		"name": "kata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19330252"
+	},
+	"item": [
+		{
+			"name": "get operators",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8102/rpn/op",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"rpn",
+						"op"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get stacks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8102/rpn/stack",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"rpn",
+						"stack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create stack",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8102/rpn/stack",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"rpn",
+						"stack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get stack by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8102/rpn/stack/64c61bdd34c79c03b98540d6",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"rpn",
+						"stack",
+						"64c61bdd34c79c03b98540d6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add value to stack",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8102/rpn/stack/64c61bdd34c79c03b98540d6/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"rpn",
+						"stack",
+						"64c61bdd34c79c03b98540d6",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "compute",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8102/rpn/op/PLUS/stack/64c61bdd34c79c03b98540d6",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"rpn",
+						"op",
+						"PLUS",
+						"stack",
+						"64c61bdd34c79c03b98540d6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete stack",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8102/rpn/stack/64c61709f160963031e79f76",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"rpn",
+						"stack",
+						"64c61709f160963031e79f76"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
